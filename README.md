@@ -8,4 +8,4 @@ Es un proyecto sobre una página web de un estudio contable ofreciendo sus servi
 - **Javascript:** Interactividad y dinamismo en la aplicación web.
 
 ## Deployment
-- El deploy de este proyecto puede ver en la siguiente url  accounting-one.netlify.app 
+- El deploy de este proyecto se puede ver en la siguiente URL: [accounting-one.netlify.app](https://accounting-one.netlify.app/)
