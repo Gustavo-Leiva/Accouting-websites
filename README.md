@@ -1,4 +1,4 @@
-## Accouting websites.
+## Accounting websites.
 
 Es un proyecto sobre una página web de un estudio contable ofreciendo sus servicios profesionales, desarrollada con las tecnologías web estándar como HTML, CSS y Javascript.
 
