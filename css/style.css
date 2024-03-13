@@ -1,0 +1,1211 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*Para hacer el comportamiento del desplazamiento mas suave*/
+ html{
+    scroll-behavior: smooth; 
+     scroll-snap-type: y mandatory;
+ }
+
+body{      
+    /* padding: 0  0 0 0; */
+    margin: 0 auto;
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";    
+    max-width: 992px;
+    /* line-height: 1.7; */
+    color: #4d4d4d;
+    font-weight: 400;
+    font-size: 1rem;
+    box-sizing: border-box;
+     /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
+    /*scroll-padding-top: 30px; Ajusta según sea necesario */
+
+}
+
+
+
+/*Estilos a la barra de contacto y menu de navegacion*/
+.container-all{   
+    height: 4rem;
+    position: fixed;
+    z-index: 1000; 
+    /* Un valor alto para asegurar que esté por encima de otros elementos */
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0;
+   
+}
+
+
+ /*PENDIENTE DE CENTRAR LA IMAGEN DEL LOGO*/
+ .imagen-logo{
+    width:4rem;
+    height:4rem;     
+    display:flex;
+    align-items: center;
+    justify-content:center;
+   
+}
+
+/*Estilos a los subtitulos de servicios*/
+.text-primary {
+    display:flex;
+    justify-content:center;
+    line-height: 1.7;
+    color:  #32dbc6;
+    font-weight:360;
+    font-size: 2.1rem;
+    margin-bottom: 1rem;    
+}
+
+/*Estilos a los contactos*/
+.container-contacto {
+    background-color: #2e2e2e;   
+    margin: 0 auto;
+}
+
+
+/*Estilos a los menues*/
+
+
+
+.nav-contacto a{
+  
+    text-decoration: none;
+    align-items:center;
+    
+}
+
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;  
+    color: #f8f2f2;  
+    background-color:  #00387a; 
+}
+
+
+
+
+
+
+/*alinear a cada elemento uno al lado del otro la barra de menu*/
+.nav-list {
+    display: flex;
+}
+
+
+
+
+
+/*eliminar los subrayados de la lista del menu*/
+.nav-menu a{
+    text-decoration: none;   
+    color: #f8f2f2; 
+    
+}
+
+.menu-item a:hover{
+   color: #bbbbbb;
+}
+
+/*eliminar viñetas de los items del menu*/
+.nav-menu li{
+    list-style: none;    
+
+}
+
+/*Estilos a los menu de navegacion*/
+.menu-item{
+    font-size: 12px;
+    margin: 0 10px;
+    line-height: 50px;
+    text-transform: uppercase;
+    width: max-content;/*extender el contenido hacia la derecha*/
+}
+
+
+/*estilos a los iconos de redes sociales*/
+.social-links a {
+    display: inline-block;
+    align-items: center;
+    text-align: center;  
+    height:2rem;
+    width:2rem;
+    line-height: 4rem;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 0 1rem 0 0;
+    
+}
+
+
+/*hover a las redes sociales*/
+.social-links a:hover{
+    background-color: #32dbc6;
+    transition: all 0.5s ease;
+    line-height: 2rem;
+    
+}
+
+
+
+/*Centrar el texto de servicios*/
+.title-services {
+    text-align: center;
+    font-size: 3rem;
+    font-weight:300;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+#nosotros {
+    display:flex;
+    justify-content:space-between;
+    margin-left: 2.5rem;
+}
+
+/*Importnate cambiar esto para hacer el scroll menos brusco*/
+
+
+.imagenContenedora, .servicios {
+    scroll-margin-top: 9rem;
+}
+
+.nosotros{
+    scroll-margin-top: 12rem;
+}
+.contactanos{
+    scroll-margin-top: 15rem; 
+}
+
+.nosotros .acerca-de-nosotros{
+    font-size:2rem;
+    font-weight:300;
+    margin-bottom:1.2rem;
+    color: #000; 
+
+}
+
+.main-col ul li {
+    list-style: none;
+   
+}
+
+/*Estilos a las viñetas de cada elemento citado en el texto*/
+.main-col ul li::before{      
+    content: "\2713";
+    margin-right: 10px;
+    font-size: 14px;    
+    color:#32dbc6;
+}
+
+/*Dar estilos a las columnas*/
+.main-col ul li {
+    font-size:12px;
+    font-weight:normal;
+    letter-spacing: 1.5px;
+    
+}
+
+li {
+    margin-bottom: 10px;
+    color: gray;
+    
+}
+
+
+.container-section{
+    max-width: 992px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-col{
+    max-width :33%;
+    padding: 0 10px;
+    margin-bottom: 3rem;
+}
+
+.imagen0{
+    width: 100%;
+   
+}
+
+.imagen1 {
+    width: 15rem;
+    height: 15rem;
+ }
+
+ .imagen2 {
+    margin-left: 2.5rem;
+    width: 15rem;
+    height: 15rem;
+ }
+
+ .imagen3{
+    width: 20rem;
+    height: 18rem;
+    margin-right: 1.5rem;
+ }
+
+
+ 
+
+ 
+
+
+
+ /*estilos del contenido de la trayectoria del estudio*/
+ p{
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    color: gray;
+ }
+
+ p strong {   
+    font-weight: 500;
+    color:  #32dbc6;
+ }
+
+
+
+ /*ESTILOS PARA FOOTER*/
+ .footer-container{
+    max-width: 1170px;
+    margin-bottom: 5rem;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.map{
+    margin-bottom: 2rem;
+    border: solid 1px #000;
+}
+
+.footer{
+    background-color:  #00387a;
+    padding:70px 0;
+  
+}
+
+.footer-col{
+    width :25%;
+    padding: 0 15px;
+
+}
+
+.footer-col h4 {
+    font-size:18px;
+    color: #ffffff;
+    text-transform:capitalize;
+    margin-bottom:35px;
+    font-weight:500;
+    position:relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left : 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width:50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom:10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#ffff;
+    text-decoration: none;
+    font-weight:300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height:40px;
+    width:40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color:#ffffff;
+    
+}
+
+
+/*Centrar el titulo de contactanos*/
+.contactos{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+
+.derechos{
+    padding: 20px 0;
+    text-align:center;
+    font-size: 14px;
+}
+
+hr{
+    
+    border: 1px solid rgb(141, 141, 141); /* Color de la raya */
+    margin-bottom: 20px 0; /* Espacio alrededor de la raya */
+}
+
+.imagenContenedora {
+    position: relative;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.leyenda{
+    position:absolute;    
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    color:  white;
+   
+  
+    
+}
+
+.tareas{
+   
+  
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0.1rem;
+    
+   
+}
+
+.leyenda {
+    
+    animation: mover-izquierda-derecha 2s 1;
+    animation-fill-mode: forwards ;   
+}
+
+@keyframes mover-izquierda-derecha {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+/*responsive*/
+/* @media (max-width: 767px){
+    .footer-col {
+        width:50%;
+        margin-bottom: 30px;
+    }
+
+} */
+
+
+/*ocultar la hamburguesa*/
+.abrir-menu,
+.cerrar-menu
+{
+    display:none;
+}
+
+
+
+
+
+/*Estilos a los contactos*/
+.container-contacto {
+    background-color: #2e2e2e;   
+    margin: 0 auto;
+}
+
+/*Estilos a los menues*/
+.nav-contacto li{
+    list-style-type: none;
+    display: inline-block;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   line-height: 30px;
+   font-size:1rem;
+    
+}
+
+
+
+.nav-contacto li a{
+    color: #32dbc6;
+    margin-left: 0.4rem;
+    margin-right: 0.8rem;
+}
+
+
+.nav-contacto a{
+    text-decoration: none;
+    align-items:center;
+   
+}
+
+/*alinear a cada elemento uno al lado del otro*/
+.container-contacto
+ {
+    display: flex;
+    justify-content:space-between;   
+}
+
+.nav-items {
+    display: flex;
+    justify-content:space-around;   
+}
+
+
+.nav-items {
+    color: #f8f2f2;  
+    background-color: #93c5ff;
+    background-color:  #00387a;
+}
+
+
+
+
+/*alinear a cada elemento uno al lado del otro la barra de menu*/
+.nav-list {
+    display: flex;
+}
+
+
+
+
+
+/*eliminar los subrayados de la lista del menu*/
+.nav-menu a{
+    text-decoration: none;   
+    color: #f8f2f2; 
+    
+}
+
+.menu-item a:hover{
+   color: #bbbbbb;
+}
+
+/*eliminar viñetas de los items del menu*/
+.nav-menu li{
+    list-style: none;    
+
+}
+
+/*Estilos a los menu de navegacion*/
+.menu-item{
+    font-size: 12px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;/*extender el contenido hacia la derecha*/
+}
+
+
+/*estilos a los iconos de redes sociales*/
+.social-links a {
+    display: inline-block;
+    align-items: center;
+    text-align: center;  
+    height:2rem;
+    width:2rem;
+    margin: 0;   
+    line-height: 4rem;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 0 1rem 0 0;
+    
+}
+
+
+/*hover a las redes sociales*/
+.social-links a:hover{
+    background-color: #32dbc6;
+    transition: all 0.5s ease;
+    line-height: 2rem;
+    
+}
+
+
+
+/*Centrar el texto de servicios*/
+.title-services {
+    text-align: center;
+    font-size: 3rem;
+    font-weight:300;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+.nosotros {
+    display:flex;
+    justify-content:space-between;
+    margin-left: 2.5rem;
+}
+
+.nosotros .acerca-de-nosotros{
+    font-size:2rem;
+    font-weight:300;
+    margin-top: 0;
+    margin-bottom:1.2rem;
+    color: #000; 
+
+}
+
+.main-col ul li {
+    list-style: none;
+    margin-left: 0;
+}
+
+/*Estilos a las viñetas de cada elemento citado en el texto*/
+.main-col ul li::before{      
+    content: "\2713";
+    margin-right: 10px;
+    font-size: 14px;    
+    color:#32dbc6;
+}
+
+/*Dar estilos a las columnas*/
+.main-col ul li {
+    font-size:12px;
+    font-weight:normal;
+    letter-spacing: 1.5px;
+    
+}
+
+li {
+    margin-bottom: 10px;
+    color: gray;
+    
+}
+
+
+
+.main-col{
+    max-width :33%;
+    padding: 0 10px;
+    margin-bottom: 3rem;
+}
+
+.imagen0{
+    width: 100%;
+   
+}
+
+.imagen1 {
+    width: 15rem;
+    height: 15rem;
+ }
+
+ .imagen2 {
+    margin-left: 2.5rem;
+    width: 15rem;
+    height: 15rem;
+ }
+
+ .imagen3{
+    width: 20rem;
+    height: 18rem;
+    margin-right: 1.5rem;
+ }
+
+
+
+
+
+ /*estilos del contenido de la trayectoria del estudio*/
+ p{
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    color: gray;
+ }
+
+ p strong {   
+    font-weight: 500;
+    color:  #32dbc6;
+ }
+
+
+
+ /*Estilos para el footer*/
+ .footer-container{
+    max-width: 1170px;
+    /* margin: auto; */
+    margin-bottom: 5rem;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.map{
+    margin-bottom: 2rem;
+    border: solid 1px #000;
+}
+
+.footer{
+    background-color:  #00387a;
+    padding:70px 0;
+    
+}
+
+.footer-col{
+    width :25%;
+    padding: 0 15px;
+
+}
+
+.footer-col h4 {
+    font-size:18px;
+    color: #ffffff;
+    text-transform:capitalize;
+    margin-bottom:35px;
+    font-weight:500;
+    position:relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left : 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width:50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom:10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#ffff;
+    text-decoration: none;
+    font-weight:300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height:40px;
+    width:40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color:#ffffff;
+    
+}
+
+
+/*Centrar el titulo de contactanos*/
+.contactos{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+
+.derechos{
+    padding: 20px 0;
+    text-align:center;
+    font-size: 14px;
+}
+
+hr{
+    
+    border: 1px solid rgb(141, 141, 141); /* Color de la raya */
+    margin-bottom: 20px 0; /* Espacio alrededor de la raya */
+}
+
+.imagenContenedora {
+    position: relative;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.leyenda{
+    position:absolute;    
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    color:  white;
+   
+  
+    
+}
+
+
+.ubicacion{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+   
+}
+
+.map{
+    flex: 1; /* El mapa ocupa todo el espacio disponible en el contenedor */
+    max-width: 60%;
+}
+.datos{
+ 
+    width: 35%; /* Ajusta según sea necesario */
+    box-sizing: border-box;
+    
+ 
+}
+
+h3{
+    font-size: medium;
+}
+
+.datos p{
+
+    margin-bottom: 1rem;
+    
+}
+
+.datos a {
+    text-decoration: none; /* Quita el subrayado de los enlaces dentro de .datos */
+    color: #007bff; /* Cambia el color del texto del enlace, si es necesario */
+}
+
+
+.tareas{  
+  
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0.1rem;
+    
+   
+}
+
+.leyenda {
+    
+    animation: mover-izquierda-derecha 2s 1;
+    animation-fill-mode: forwards ;   
+}
+
+@keyframes mover-izquierda-derecha {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+/*ocultar la hamburguesa*/
+.abrir-menu,
+.cerrar-menu
+{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 360px){
+
+    /* html {
+        scroll-behavior: auto;
+        
+    } */
+
+  body{
+    max-width: 100vw;
+    /* scroll-snap-align: none;
+    scroll-snap-stop: normal;
+    scroll-padding-top: 0; */
+  }
+  
+    /* Añade este bloque para reducir márgenes generales */
+ body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+ } 
+ 
+
+
+
+   .abrir-menu,
+   .cerrar-menu{
+    display: block;
+ } 
+
+
+
+
+
+ 
+/* Estilos para el botón de abrir menú en modo responsive */
+#abrir
+
+ {
+    background-color: #00387a; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    font-size: 2rem; /* Tamaño del texto del botón */
+    border: none; /* Eliminar el borde */
+    padding: 12px 15px; /* Ajustar el espaciado interno del botón */
+    margin-right: 2px;
+   
+  
+    }
+
+#cerrar
+
+  {
+    background-color: #00387a; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    font-size: 2rem; /* Tamaño del texto del botón */
+    border: none; /* Eliminar el borde */
+    padding: 12px 15px; /* Ajustar el espaciado interno del botón */
+    margin-right: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para efecto hover */
+    }
+
+
+ .nav-menu{
+    opacity: 0;
+    visibility: hidden;
+ }
+
+ .menu-item{
+    line-height: 3rem; /* Ajusta la altura de línea */
+ }
+ 
+ .nav-menu{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.5rem;
+    position: absolute;   
+    padding: 1rem; /*reduzco el relleno*/
+    /* background-color: #1c1c1c1c; */
+    background-color: #00387a;
+    top: 0px;
+    right: 0;
+    bottom: -100;
+    box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+ }
+
+ .nav-menu.visible{
+    opacity: 1;
+    visibility: visible;
+ }
+
+ .nav-list{   
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 0.5rem; /* Ajusta el relleno */
+    gap: 0.5rem; /* Reduzco el espacio vertical entre los elementos del menú */
+    
+ } 
+
+
+ .nav-list a{
+    color:#ecececec;
+    font-size: 0.7rem; /* Reduzco el tamaño del texto */
+    padding: 0.3rem; /* Ajusta el relleno */
+    margin-bottom: 0.3rem; /* Ajusta el margen inferior */
+    line-height: 1.5; /* Ajusta la altura de línea */
+
+    }
+
+ .nav-items{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+    }
+
+ .nosotros{
+    display: flex;
+    flex-direction: column;
+  
+ }
+
+
+
+
+ 
+  .container-section{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .text-primary{
+    justify-content: left;
+    margin-left: 2rem; 
+    font-weight: 500;
+    font-size: 2rem; 
+    
+  }
+
+
+    
+  
+  .main-col {
+    max-width: 100%;
+    margin-bottom: 2px; /* Añade un espacio entre las columnas para mejorar la legibilidad */
+    
+  }
+
+ .main-col ul li {
+    /* letter-spacing: 0.2rem; */
+    font-size: 18px;
+    padding-left: 0px;
+   
+ }
+
+ .ul-check{
+    margin-bottom: 30px;
+ }
+ 
+
+ .imagen0{
+    width: 100%;
+    margin-top: 11rem;
+ }
+  .imagen1{
+    width: 100%;
+    margin-top: 1rem; /* Añade espacio superior para la imagen */
+  }
+
+  .imagen2{
+    width: 88vw;
+  }
+
+  .imagen3{
+    width: 88%;
+  }
+
+
+  .leyenda{
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin-top: 5rem;
+   
+  }
+
+  .contactanos {
+    width: 100%; /* Ajusta el ancho de la sección */
+    margin: 0; /* Elimina el margen para ocupar todo el ancho */
+  } 
+
+  .ubicacion{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map {
+    flex: 1; /* El mapa ocupa todo el espacio disponible en el contenedor */
+    max-width: 100vw;
+  }
+
+  .datos {
+    width: 100%; /* Ajusta el ancho de la sección de datos al 100% */
+  }
+
+  .ubicacion,
+  .datos {
+    margin-top: 1rem; /* Agrega un margen entre los elementos si es necesario */
+    margin-left: 0.2rem;
+  }
+
+  .container-contacto{
+    display: flex;
+    flex-direction: column;
+    max-width:100vw;
+  }
+
+  .nav-contacto{
+    padding-inline-start: 2px;
+  }
+  .nav-contacto li{
+    margin: 0px;
+    align-items: end;
+    max-width: 100vw;
+   
+  }
+
+  .footer{
+    max-width: 100vw;
+    
+  }
+
+  .footer-container .row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container .row .social-links{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-container .row .social-links a {
+    height:3rem;
+    width:3rem;
+    justify-content: space-between;
+    border-radius: 50%; 
+    font-size: 1.5rem;
+    margin: 0 1rem 0 0;
+    padding: 0.5rem;
+    align-items: center;
+    text-align: center; 
+  }
+ 
+  .servicios,.nosotros{
+    scroll-margin-top: 10rem;
+  }
+
+  .contactos{
+    margin-top: 2rem;
+   
+  }
+  
+
+ .social-links{
+    margin-bottom: 0.2rem;
+ }
+
+   
+}
+
+
+
